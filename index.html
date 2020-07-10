@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Stop Watch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading-main">
+            <h1>Stop Watch</h1>
+        </div>
+            <div id="time" class="row">
+                <h2 id="min" class="col-3">00</h2>
+                <p class="col-1">:</p>
+                <h2 id="sec" class="col-3">00</h2>
+                <p class="col-1">:</p>
+                <h2 id="msec" class="col-3">00</h2>
+            </div>
+            <div class="btn-group row" role="group" aria-label="Basic example">
+                <div class="col-sm-6 col-md-3 col-6">
+                    <button type="button" class="btn btn-secondary" onclick="start()" id="start">Start</button>
+                </div>
+                <div class="col-sm-6 col-md-3 col-6">
+                    <button type="button" class="btn btn-secondary" onclick="stop()" id="stop" disabled>Stop</button>
+                </div>
+                <div class="col-sm-6 col-md-3 col-6">
+                    <button type="button" class="btn btn-secondary" onclick="count()" id="count" disabled>Count</button>
+                </div>
+                <div class="col-sm-6 col-md-3 col-6">
+                    <button type="button" class="btn btn-secondary" onclick="reset()" id="reset" disabled>Reset</button>
+                </div>
+                
+                
+            </div>
+            <div class="float-left row lap">
+                <div id="place" class="col col-sm-12">
+                    <h3>Laps</h3>
+                </div>
+            </div>
+    </div>
+    
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
