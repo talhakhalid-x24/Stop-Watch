@@ -7,6 +7,11 @@ body{
     font-family: monospace;
 }
 
+.container, .row{
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
 h1{
     font-size: 5rem;
     color: #fcff30;
@@ -34,7 +39,7 @@ h2{
 }
 
 p{
-    margin:0 10px;
+    margin: 10px 15px 10px 0px;
     font-size: 7rem;
     padding: 0 !important;
 }
@@ -74,16 +79,13 @@ hr{
         margin-left: 0;
     }
 
-    #time{
-        justify-content: center;
+    #time, .btn-group{
+        width: 100%;
+        text-align: center;
     }
 
     p{
-        margin: 0 auto;
-    }
-
-    .btn-group{
-        text-align: center;
+        margin: 15px auto;
     }
 
     .lap{
@@ -92,5 +94,12 @@ hr{
 
     h3, #place{
         text-align: center;
+    }
+
+    h2,p{
+        font-size: 5rem;
+    }
+    #time h2:last-child{
+        font-size: 3rem;
     }
 }
